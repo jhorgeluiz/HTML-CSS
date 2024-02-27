@@ -6,20 +6,32 @@
     <title>tabela 4</title>
     <style>
         body {
-            background-color: aquamarine;
+            background-color: bisque;
         }
 
         table {
             border-collapse: collapse;
-            width: 700px;
+            width: 600px;
             height: 300px;
         }
 
-        td {
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        td, th {
             background-color: white;
             border: 1px solid black;
             font-size: 20px;
             font-weight: bold;
+        }
+
+        caption {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            padding: 5px;
         }
 
         .titulo {
@@ -29,55 +41,68 @@
     </style>
 </head>
 <body>
-    <h1>tabela</h1>
+    <h1>Tabela</h1>
     <table>
-        <tr>
-            <td class="titulo">Grupo</td>
-            <td class="titulo">nomes</td>
-            <td class="titulo" colspan="3">filmes</td>
-        </tr>
-        <tr>
-            <td class="titulo" rowspan="3">mulheres</td>
-            <td>ana maria santos</td>
-            <td>alien</td>
-            <td>rambo</td>
-            <td>vingadores</td>
-        </tr>
-        <tr>
-           
-            <td>beatriz sousa</td>
-            <td>hulk</td>
-            <td>inception</td>
-            <td>batman</td>
-        </tr>
-        <tr>
-           
-            <td>claudia</td>
-            <td>oblivion</td>
-            <td>matrix</td>
-            <td>big hero</td>
-        </tr>
-        <tr>
-            <td class="titulo" rowspan="3">homens</td>
-            <td>bruno mendonça</td>
-            <td>intocaveis</td>
-            <td>amnesia</td>
-            <td>gladiador</td>
-        </tr>
-        <tr>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col" class="titulo">Grupo</th>
+                <th scope="col" class="titulo">Nomes</th>
+                <th scope="colgroup" class="titulo" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" class="titulo" rowspan="3">Mulheres</th>
+                <td>Ana maria santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
             
-            <td>daniel lorenço</td>
-            <td>wall-e</td>
-            <td>oldboy</td>
-            <td>dangal</td>
-        </tr>
-        <tr>
+                <td>Beatriz sousa</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
             
-            <td>fabio mota</td>
-            <td>star wars 5</td>
-            <td>taxi driver</td>
-            <td>toy story</td>
-        </tr>
+                <td>Claudia</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" class="titulo" rowspan="3">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocaveis</td>
+                <td>Amnesia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                
+                <td>Daniel Lorenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                
+                <td>Fabio Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
