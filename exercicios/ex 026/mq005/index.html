@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>media query</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+    
+        <i id="burguer" class="material-icons" onclick="clickmenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">opção 1</a></li>
                 <li><a href="#">opção 2</a></li>
@@ -21,9 +28,18 @@
     </header>
     <main>
         <article>
-            <h2>Testando media query</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus ipsam, velit quidem atque eligendi quibusdam nihil animi magnam delectus. Eaque nulla voluptatem incidunt nam quas minima nisi aut atque dicta?</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eligendi, culpa, minus, consectetur voluptatibus similique voluptates sequi totam voluptas architecto asperiores autem earum a. Voluptatum maxime dolores facilis quam laboriosam! <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quod, vel hic repellat dolorem, distinctio, harum illum voluptate nihil unde rerum velit quidem corporis vero maxime beatae eaque culpa nostrum!</p> </p>
+            <h2>Testando media queries</h2>
+           <p>Todo material tem o valor que lhe é conferido pelo uso que dele se faz.Um texto é apenas uma porção de letras impressas,até que o leitor se aproprie do que ele diz e,então,dê alma às letras fazendo-as texto de fato.De certa forma,apropriar-se do texto do outro é torná-lo seu,é fazê-lo próprio também. <br> O objetivo desta Coletânea de Textos é subsidiar todo professor cursista em sua trajetória de formação,para que seja um alfabetizador cada vez mais competente e semeie leitura e escrita pelas escolas deste país.Os textos lidos pelo formador nos momentos de Leitura Compartilhada, os textos expositivos que aprofundam os conteúdos trabalhados no Curso,os textos que cada professor avalia terem qualidade suficiente para serem socializados com os companheiros do grupo, os próprios textos...todos têm lugar no Fichário,que abriga a Coletânea e o Caderno de Registro. <br> O desenvolvimento das competências profissionais dos educadores passa necessariamente pela ampliaçãodo universo de conhecimentos e pela reflexão sobre a prática.Portanto,o Fichário pode progressivamente se tornar um aliado nesse processo:por meio dos textos lidos e do registro escrito,é possível não só aprender mais sobre os conteúdos da formação e analisar criticamente a prática profissional,mas também ampliar as capacidades de leitura e escrita,de interpretação e expressão. <br> Em seu livro 40 escritos,(Editora Iluminuras,2000) Arnaldo Antunes diz algo que traduz a certeza– que também temos  – de que cada texto é único:"A frase que eu digo não será a mesma frase se sair da sua boca.Ou se eu a disser dentro de um período.Ou com outra ordem de palavras.Ou se houver uma trilha sonora ao fundo.Ou se mudarmos a trilhasonora.Ou se ela for escrita numa letra trêmula.Ou em tipo composto num jornal.Ou como letreiro de uma loja. Ou se dita só para testar o eco desta sala.Ou se for mentira.Ou se tiver uma platéia escutando." <br> Também cada leitura é única,singular...e o desafio é compartilhá-la,torná-la acessível ao outro e fazê-lo entender nosso ponto de vista.Afinal,a eficácia da comunicação está na aproximação máxima entre o que se pretendia dizer,o que efetivamente se disse e o que é compreendido. Esperamos que todos os professores cursistas não só leiam muitos textos e deles se apropriem, mas que produzam os seus próprios,para que muitos outros leiam.Conquistando cada vez mais essa aproximação entre o dito e o compreendido. Equipe Pedagógica do Programa de Formação de Professores Alfabetizadores</p>
         </article>
     </main>
+    <script>
+        function clickmenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
